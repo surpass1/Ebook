@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @land.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @land.location %>
+</p>
+
+<p>
+  <strong>Seller:</strong>
+  <%= @land.seller %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @land.size %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @land.price %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @land.image %>
+</p>
+
+<%= link_to 'Edit', edit_land_path(@land) %> |
+<%= link_to 'Back', lands_path %>

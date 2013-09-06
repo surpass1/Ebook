@@ -1,0 +1,35 @@
+<div class="container">
+<h3 class="text-info">RealEstate Connect</h3>
+  <% @real_estates.each do |real_estate| %>
+    
+  <div class="row">
+    <p class="<%= cycle('list_line_odd' , 'list_line_even' ) %>"></p>
+    <div class="span3 pull-left">
+        <%= image_tag(real_estate.image_path, :class => 'list_image' ) %>
+        <p><%= real_estate.name %></p>
+        <p><%= real_estate.location %></p>
+        <p><%= real_estate.seller %></p>
+        <p><%= real_estate.size %></p>
+        <p><%= real_estate.price %></p>
+        <p><%= link_to 'Show', real_estate %>
+        <%= link_to 'Edit', edit_real_estate_path(real_estate) %>
+        <%= link_to 'Destroy', real_estate, method: :delete, data: { confirm: 'Are you sure?' } %><P>
+
+
+
+    </div>
+    <div class="span6">
+       
+          <% end %>
+  
+      <br>
+      <br>
+      <p class="pull-right">
+      <%= link_to 'New Real estate', new_real_estate_path %>
+      </p>
+    </div>
+   
+  </div>
+</div> 
+  
+    
