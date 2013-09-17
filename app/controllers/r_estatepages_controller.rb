@@ -1,0 +1,2 @@
+class REstatepagesController < ApplicationController
+end
